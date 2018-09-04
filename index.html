@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+      <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+      <div>
+        <div>
+          <span>
+            Total new contribution:
+          </span>
+          <span class="mdl-textfield mdl-js-textfield">
+              <input class="mdl-textfield__input contribution" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample2">
+              <label class="mdl-textfield__label" for="sample2">Contribution (e.g. 1000)</label>
+              <span class="mdl-textfield__error">Input is not a number!</span>
+            </span>
+        </div>
+        <div class="row">
+          <span>
+            <span class="mdl-textfield mdl-js-textfield">
+              <input class="mdl-textfield__input current_amount" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample2">
+              <label class="mdl-textfield__label" for="sample2">Current amount (e.g. 1000)</label>
+              <span class="mdl-textfield__error">Input is not a number!</span>
+            </span>
+          </span>
+          <span>
+            <span class="mdl-textfield mdl-js-textfield">
+              <input class="mdl-textfield__input percentage" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample2">
+              <label class="mdl-textfield__label" for="sample2">Percentage (e.g. 17.5)</label>
+              <span class="mdl-textfield__error">Input is not a number!</span>
+            </span>
+          </span>
+          <span>
+            <span class="mdl-textfield mdl-js-textfield">
+              <input class="mdl-textfield__input result" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample2" disabled>
+              <label class="mdl-textfield__label" for="sample2">Required contribution</label>
+              <span class="mdl-textfield__error">Input is not a number!</span>
+            </span>
+          </span>
+        </div>
+        <div class="row">
+          <span>
+            <span class="mdl-textfield mdl-js-textfield">
+              <input class="mdl-textfield__input current_amount" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample2">
+              <label class="mdl-textfield__label" for="sample2">Current amount</label>
+              <span class="mdl-textfield__error">Input is not a number!</span>
+            </span>
+          </span>
+          <span>
+            <span class="mdl-textfield mdl-js-textfield">
+              <input class="mdl-textfield__input percentage" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample2">
+              <label class="mdl-textfield__label" for="sample2">Percentage (e.g. 17.5)</label>
+              <span class="mdl-textfield__error">Input is not a number!</span>
+            </span>
+          </span>
+          <span>
+            <span class="mdl-textfield mdl-js-textfield">
+              <input class="mdl-textfield__input result" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample2" disabled>
+              <label class="mdl-textfield__label" for="sample2">Required contribution</label>
+              <span class="mdl-textfield__error">Input is not a number!</span>
+            </span>
+          </span>
+        </div>
+        <div id="recalculate">
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" onclick="calculateContributions()">
+            Calculate required contributions
+          </button>
+        </div>
+      </div>
+      <script async src="./index.js"></script>
+  </body>
+</html>
